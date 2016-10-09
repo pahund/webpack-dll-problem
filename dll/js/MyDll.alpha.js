@@ -1,4 +1,4 @@
-var alpha_e0d5512587ca63cbbd71 =
+var alpha_c18f02eafccdaeaa7696 =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -52,15 +52,6 @@ var alpha_e0d5512587ca63cbbd71 =
 
 /***/ },
 /* 1 */
-/*!******************!*\
-  !*** ./alpha.js ***!
-  \******************/
-/***/ function(module, exports) {
-
-	module.exports = "alpha";
-
-/***/ },
-/* 2 */
 /*!**************!*\
   !*** ./a.js ***!
   \**************/
@@ -69,16 +60,18 @@ var alpha_e0d5512587ca63cbbd71 =
 	module.exports = "a";
 
 /***/ },
-/* 3 */
-/*!**********************!*\
-  !*** ../~/module.js ***!
-  \**********************/
+/* 2 */
+/*!******************!*\
+  !*** ./alpha.js ***!
+  \******************/
 /***/ function(module, exports) {
 
-	module.exports = "module";
+	module.exports = "alpha";
 
 /***/ },
-/* 4 */
+/* 3 */,
+/* 4 */,
+/* 5 */
 /*!*********************************!*\
   !*** ./~/preact/dist/preact.js ***!
   \*********************************/
@@ -553,6 +546,15 @@ var alpha_e0d5512587ca63cbbd71 =
 	    exports.options = options;
 	});
 	//# sourceMappingURL=preact.js.map
+
+/***/ },
+/* 6 */
+/*!**********************!*\
+  !*** ../~/module.js ***!
+  \**********************/
+/***/ function(module, exports) {
+
+	module.exports = "module";
 
 /***/ }
 /******/ ]);

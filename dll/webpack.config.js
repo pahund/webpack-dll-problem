@@ -11,6 +11,7 @@ module.exports = {
 		library: "[name]_[hash]"
 	},
 	plugins: [
+		new webpack.optimize.OccurrenceOrderPlugin(true),
 		new webpack.DllPlugin({
 			path: path.join(__dirname, "js", "[name]-manifest.json"),
 			name: "[name]_[hash]"

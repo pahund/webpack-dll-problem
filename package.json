@@ -1,7 +1,7 @@
 {
   "name": "webpack-dll-problem",
   "version": "1.0.0",
-  "description": "Problem using files from node_modules in webpack DLLs",
+  "description": "Problem using npm modules in webpack DLLs",
   "main": "build-common.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

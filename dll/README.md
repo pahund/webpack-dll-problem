@@ -14,6 +14,7 @@ module.exports = {
 		library: "[name]_[hash]"
 	},
 	plugins: [
+		new webpack.optimize.OccurrenceOrderPlugin(true),
 		new webpack.DllPlugin({
 			path: path.join(__dirname, "js", "[name]-manifest.json"),
 			name: "[name]_[hash]"
@@ -25,7 +26,7 @@ module.exports = {
 # js/MyDll.alpha.js
 
 ``` javascript
-var alpha_e0d5512587ca63cbbd71 =
+var alpha_c18f02eafccdaeaa7696 =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -79,15 +80,6 @@ var alpha_e0d5512587ca63cbbd71 =
 
 /***/ },
 /* 1 */
-/*!******************!*\
-  !*** ./alpha.js ***!
-  \******************/
-/***/ function(module, exports) {
-
-	module.exports = "alpha";
-
-/***/ },
-/* 2 */
 /*!**************!*\
   !*** ./a.js ***!
   \**************/
@@ -96,16 +88,18 @@ var alpha_e0d5512587ca63cbbd71 =
 	module.exports = "a";
 
 /***/ },
-/* 3 */
-/*!**********************!*\
-  !*** ../~/module.js ***!
-  \**********************/
+/* 2 */
+/*!******************!*\
+  !*** ./alpha.js ***!
+  \******************/
 /***/ function(module, exports) {
 
-	module.exports = "module";
+	module.exports = "alpha";
 
 /***/ },
-/* 4 */
+/* 3 */,
+/* 4 */,
+/* 5 */
 /*!*********************************!*\
   !*** ./~/preact/dist/preact.js ***!
   \*********************************/
@@ -581,6 +575,15 @@ var alpha_e0d5512587ca63cbbd71 =
 	});
 	//# sourceMappingURL=preact.js.map
 
+/***/ },
+/* 6 */
+/*!**********************!*\
+  !*** ../~/module.js ***!
+  \**********************/
+/***/ function(module, exports) {
+
+	module.exports = "module";
+
 /***/ }
 /******/ ]);
 ```
@@ -589,12 +592,12 @@ var alpha_e0d5512587ca63cbbd71 =
 
 ``` javascript
 {
-  "name": "alpha_e0d5512587ca63cbbd71",
+  "name": "alpha_c18f02eafccdaeaa7696",
   "content": {
-    "./alpha.js": 1,
-    "./a.js": 2,
-    "../node_modules/module.js": 3,
-    "./node_modules/preact/dist/preact.js": 4
+    "./a.js": 1,
+    "./alpha.js": 2,
+    "./node_modules/preact/dist/preact.js": 5,
+    "../node_modules/module.js": 6
   }
 }
 ```
@@ -604,30 +607,30 @@ var alpha_e0d5512587ca63cbbd71 =
 ## Uncompressed
 
 ```
-Hash: e0d5512587ca63cbbd71
+Hash: c18f02eafccdaeaa7696
 Version: webpack 1.13.2
-Time: 101ms
+Time: 105ms
          Asset     Size  Chunks             Chunk Names
-MyDll.alpha.js  25.6 kB       0  [emitted]  alpha
- MyDll.beta.js  1.86 kB       1  [emitted]  beta
+MyDll.alpha.js  25.7 kB       0  [emitted]  alpha
+ MyDll.beta.js  1.85 kB       1  [emitted]  beta
 chunk    {0} MyDll.alpha.js (alpha) 23.1 kB [rendered]
     > alpha [0] dll alpha 
     [0] dll alpha 12 bytes {0} [built]
-    [1] ./alpha.js 25 bytes {0} [built]
-        single entry ./alpha [0] dll alpha
-    [2] ./a.js 21 bytes {0} [built]
+    [1] ./a.js 21 bytes {0} [built]
         single entry ./a [0] dll alpha
-    [3] ../~/module.js 26 bytes {0} [built]
-        single entry module [0] dll alpha
-    [4] ./~/preact/dist/preact.js 23 kB {0} [built]
+    [2] ./alpha.js 25 bytes {0} [built]
+        single entry ./alpha [0] dll alpha
+    [5] ./~/preact/dist/preact.js 23 kB {0} [built]
         single entry preact [0] dll alpha
+    [6] ../~/module.js 26 bytes {0} [built]
+        single entry module [0] dll alpha
 chunk    {1} MyDll.beta.js (beta) 57 bytes [rendered]
     > beta [0] dll beta 
     [0] dll beta 12 bytes {1} [built]
-    [5] ./beta.js 24 bytes {1} [built]
-        single entry ./beta [0] dll beta
-    [6] ./b.js 21 bytes {1} [built]
+    [3] ./b.js 21 bytes {1} [built]
         single entry ./b [0] dll beta
+    [4] ./beta.js 24 bytes {1} [built]
+        single entry ./beta [0] dll beta
 ```
 
 ## Minimized (uglify-js, no zip)
@@ -635,7 +638,7 @@ chunk    {1} MyDll.beta.js (beta) 57 bytes [rendered]
 ```
 Hash: c18f02eafccdaeaa7696
 Version: webpack 1.13.2
-Time: 356ms
+Time: 348ms
          Asset       Size  Chunks             Chunk Names
 MyDll.alpha.js    9.36 kB       0  [emitted]  alpha
  MyDll.beta.js  326 bytes       1  [emitted]  beta

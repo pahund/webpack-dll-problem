@@ -1,4 +1,4 @@
-var beta_e0d5512587ca63cbbd71 =
+var beta_c18f02eafccdaeaa7696 =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -53,24 +53,22 @@ var beta_e0d5512587ca63cbbd71 =
 /***/ },
 /* 1 */,
 /* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */
-/*!*****************!*\
-  !*** ./beta.js ***!
-  \*****************/
-/***/ function(module, exports) {
-
-	module.exports = "beta";
-
-/***/ },
-/* 6 */
+/* 3 */
 /*!**************!*\
   !*** ./b.js ***!
   \**************/
 /***/ function(module, exports) {
 
 	module.exports = "b";
+
+/***/ },
+/* 4 */
+/*!*****************!*\
+  !*** ./beta.js ***!
+  \*****************/
+/***/ function(module, exports) {
+
+	module.exports = "beta";
 
 /***/ }
 /******/ ]);

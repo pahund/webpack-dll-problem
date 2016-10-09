@@ -1,9 +1,9 @@
 {
-  "name": "alpha_e0d5512587ca63cbbd71",
+  "name": "alpha_c18f02eafccdaeaa7696",
   "content": {
-    "./alpha.js": 1,
-    "./a.js": 2,
-    "../node_modules/module.js": 3,
-    "./node_modules/preact/dist/preact.js": 4
+    "./a.js": 1,
+    "./alpha.js": 2,
+    "./node_modules/preact/dist/preact.js": 5,
+    "../node_modules/module.js": 6
   }
 }

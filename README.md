@@ -1,7 +1,7 @@
 # webpack-dll-problem
 
 In the example for using DLLs in webpack, a module named `module` is included in the 
-alpha-DLL. `module` comes from the node_modules directory in the examples dir (one dir 
+alpha-DLL. `module` comes from the `node_modules` directory in the examples dir (one dir 
 below the `dll` dir).
 
 This works, when I build the example in the `dll-user` dir using `node build.js` and

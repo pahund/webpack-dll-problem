@@ -97,65 +97,65 @@ console.log(typeof require("preact"));
 /***/ },
 /* 1 */
 /*!**************************************************************************!*\
-  !*** delegated ./alpha.js from dll-reference alpha_e0d5512587ca63cbbd71 ***!
+  !*** delegated ./alpha.js from dll-reference alpha_c18f02eafccdaeaa7696 ***!
   \**************************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = (__webpack_require__(2))(1);
-
-/***/ },
-/* 2 */
-/*!*********************************************!*\
-  !*** external "alpha_e0d5512587ca63cbbd71" ***!
-  \*********************************************/
-/***/ function(module, exports) {
-
-	module.exports = alpha_e0d5512587ca63cbbd71;
-
-/***/ },
-/* 3 */
-/*!**********************************************************************!*\
-  !*** delegated ./a.js from dll-reference alpha_e0d5512587ca63cbbd71 ***!
-  \**********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = (__webpack_require__(2))(2);
 
 /***/ },
+/* 2 */
+/*!*********************************************!*\
+  !*** external "alpha_c18f02eafccdaeaa7696" ***!
+  \*********************************************/
+/***/ function(module, exports) {
+
+	module.exports = alpha_c18f02eafccdaeaa7696;
+
+/***/ },
+/* 3 */
+/*!**********************************************************************!*\
+  !*** delegated ./a.js from dll-reference alpha_c18f02eafccdaeaa7696 ***!
+  \**********************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = (__webpack_require__(2))(1);
+
+/***/ },
 /* 4 */
 /*!************************************************************************!*\
-  !*** delegated ./beta.js from dll-reference beta_e0d5512587ca63cbbd71 ***!
+  !*** delegated ./beta.js from dll-reference beta_c18f02eafccdaeaa7696 ***!
   \************************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = (__webpack_require__(5))(5);
+	module.exports = (__webpack_require__(5))(4);
 
 /***/ },
 /* 5 */
 /*!********************************************!*\
-  !*** external "beta_e0d5512587ca63cbbd71" ***!
+  !*** external "beta_c18f02eafccdaeaa7696" ***!
   \********************************************/
 /***/ function(module, exports) {
 
-	module.exports = beta_e0d5512587ca63cbbd71;
+	module.exports = beta_c18f02eafccdaeaa7696;
 
 /***/ },
 /* 6 */
 /*!*********************************************************************!*\
-  !*** delegated ./b.js from dll-reference beta_e0d5512587ca63cbbd71 ***!
+  !*** delegated ./b.js from dll-reference beta_c18f02eafccdaeaa7696 ***!
   \*********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = (__webpack_require__(5))(6);
+	module.exports = (__webpack_require__(5))(3);
 
 /***/ },
 /* 7 */
 /*!*****************************************************************************************!*\
-  !*** delegated ../node_modules/module.js from dll-reference alpha_e0d5512587ca63cbbd71 ***!
+  !*** delegated ../node_modules/module.js from dll-reference alpha_c18f02eafccdaeaa7696 ***!
   \*****************************************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = (__webpack_require__(2))(3);
+	module.exports = (__webpack_require__(2))(6);
 
 /***/ },
 /* 8 */
@@ -645,7 +645,7 @@ console.log(typeof require("preact"));
 ```
 Hash: efbc62e35fb2014b8758
 Version: webpack 1.13.2
-Time: 105ms
+Time: 102ms
     Asset     Size  Chunks             Chunk Names
 output.js  27.8 kB       0  [emitted]  main
 chunk    {0} output.js (main) 23.6 kB [rendered]
@@ -659,9 +659,9 @@ chunk    {0} output.js (main) 23.6 kB [rendered]
 ## Minimized (uglify-js, no zip)
 
 ```
-Hash: e112c6588574819e0d32
+Hash: 4eba5f45e19a2b7a0019
 Version: webpack 1.13.2
-Time: 336ms
+Time: 342ms
     Asset     Size  Chunks             Chunk Names
 output.js  9.61 kB       0  [emitted]  main
 chunk    {0} output.js (main) 23.6 kB [rendered]
