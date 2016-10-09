@@ -1,0 +1,15 @@
+{
+  "name": "webpack-dll-problem-dll",
+  "version": "1.0.0",
+  "description": "Part of the demo that creates the webpack DLL",
+  "main": "a.js",
+  "dependencies": {
+    "preact": "^6.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrick Hund <wiekatz@gmail.com>",
+  "license": "ISC"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "webpack-dll-problem",
+  "version": "1.0.0",
+  "description": "Problem using files from node_modules in webpack DLLs",
+  "main": "build-common.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrick Hund <wiekatz@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "preact": "^6.3.0"
+  }
+}
